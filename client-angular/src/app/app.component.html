@@ -1,0 +1,9 @@
+<h3 style = "text-align: center">Il super negozio di super prodotti</h3>
+<button (click) = "visua()">Cliccami per vedere la lista dei prodotti</button>
+<div *ngFor="let p of results">
+  <h2>{{p.product_name}}</h2> <br>
+  {{p.supplier}} <br>
+  {{p.quantity}} <br>
+  {{p.unit_cost}}
+  <hr>
+</div>
